@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>당신이 입력한 텍스트는 단어로 구성되어 있습니다.</h1>
+
+<a href="{% url 'home' %}">다시하기</a>
+
+<h1 id="count_h1">입력한 텍스트 : </h1>
+{{fulltext}}
+
+<h1>단어 카운트 : </h1>
+
+{% for word in list %}
+
+{{ word }}
+{% if word == "포도" %}
+
+
+<img src="{% static 'grape.jpg' %}" alt="grape" height="100" width="100">
+{% elif word == "사과" %}
+<img src="{% static 'apple.jpg' %}" alt="apple" height="100" width="100">
+
+
+{%endif%}
+
+{% endfor %}
+    </body>
+</html>

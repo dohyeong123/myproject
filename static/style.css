@@ -1,0 +1,52 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+#home_h1{
+    float: left;
+    color:#dedede;
+    border-bottom : 6px solid #dedede;
+    margin-bottom: 50px;
+    padding: 13px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(lion.jpg) no-repeat;
+    background-size: cover;
+}
+.textbox{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+a{
+    color:#eadee8;
+    border-bottom: 6px solid #eadee8;
+}
+a:active{
+    color:green;
+}
+a:hover{
+    color:black;
+}
+a:visited{
+    color: red;
+}
+a:focus{
+    color:#eadee8;
+}
+.fulltext{
+    margin:0;
+
+}
+.btn{
+    width: 100%;
+    background: none;
+    border: 2px solid #eadee8;
+    color: black;
+    box-sizing: border-box;
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WORD COUNT</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div class="textbox">
+    <h1 id="home_h1">
+            <i class="fab fa-xbox"></i>
+        Match Word&Image
+    </h1>
+
+<a href="{% url 'about' %}">
+        <i class="fas fa-question"></i>
+    ABOUT
+</a>
+
+<form action="{%url 'count' %}">
+    <textarea class="fulltext" name="fulltext" placeholder="이곳에 내용을 입력해 주세요." cols="40" rows="10"></textarea>
+    <br>
+    <input type="submit" value="COUNT" class="btn">
+
+
+</form>
+</div>
+</body>
+
+</html>
